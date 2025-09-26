@@ -3,6 +3,10 @@
 ### JavaScript
 **Esto es un texto en negritas**
 *Esto es un texto en cursivas*
+
+Esto es la parte en donde se le indica el encabezado en mi archivo HTML
+> h1
+
 ### HTML 5
 ### CSS3
 ### C#
