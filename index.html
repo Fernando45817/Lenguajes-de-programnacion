@@ -3,83 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenguajes de programacion</title>
+    <title>Tablas con estilo</title>
+    <link rel="stylesheet" href="ICONOS/fontawesome-free-7.1.0-web/css/all.css">
+
+    <style>
+    body {
+        background-color: chartreuse;
+    }
+   
+    
+     table {
+        margin: auto;
+        margin-top: 50px;
+
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        border-collapse: collapse;
+        
+        }
+        
+     table th{
+        border: 2px solid blue;
+     }
+     table th,
+     table td{
+        border: 3px solid red;
+        padding: 5px 10px;
+     }
+
+     table th,
+     table td:first-child{
+        background-color: lightblue;
+        color: rgb(88, 112, 112);
+        font-weight: 600;
+        width: 100px;
+     }
+     table td i{
+        margin-right: 15px;
+        font-size: 15px;
+        cursor: pointer;
+     }
+     table td {
+        
+        border: 3px solid red;
+        width: 100px;
+     }
+     table td i:nth-child(1){
+        color: rgb(13, 136, 95);
+     }
+     table td i:nth-child(2){
+        color: rgb(97, 104, 6);
+     }
+      table td i:nth-child(3){
+        color: rgb(141, 45, 7);
+        margin-right: 0px;
+    }
+    table tr:nth-child(odd){
+        background-color: bisque;
+    }
+    table tr:nth-child(even){
+        background-color: white;
+    }
+    table {
+        box-shadow: 30px 20px 15px 40px rgba(50, 100, 0, 0.75);
+        text-shadow: 2px 2px 2px rgba(4, 73, 116, 0.9);
+    }
+    
+   
+
+
+    table tr :hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    table td i :hover{
+        opacity: 0.7;
+    }
+
+     
+    </style>
 </head>
 <body>
-
-    <h1>Herramientas y lenguajes para desarrollo web</h1>
-
-    <!--Tabla de las herramientas-->
-
-    <table border="2">
-           
-        <!--Área de logos y nombres de la primera fila-->
-           <thead style="background-color: chocolate;">
-            
+    <table>
+           <thead>
             <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Nombre (s)
+                </th>
+                <th>
+                    Apellidos
+                </th>
+                <th>Correo Electronico</th>
+                <th>
+                    Opciones
+                </th>
+            </tr>
+           </thead>
 
-                <th>HTML 5 <img src="imgs/250px-HTML5_logo_and_wordmark.svg.webp" alt="" width="200px" height="200px" </th> 
-                <th> VS Code <img src="imgs/lg-661dcdd59f379-Visual-Studio-Code.webp" alt="" width="200px" height="200px" </th> 
-                <th>JavaScript <img src="imgs/javascript-logo-png_seeklogo-330541.webp" alt="" width="200px" height="200px" </th>
-                <th>CSS3 <img src="imgs/css3-logo.webp" alt="" width="200px" height="200px" </th>
+           <tbody>
+                  <tr>
+                    <td>
+                        45817
+                    </td>
+                    <td>
+                        Fernando
+                    </td>
+                    <td>
+                        Vargas
+                    </td>
+                    <td>
+                        al45817@un.edu.mx
+                    </td>
+                    <td>
+                      <i class="fa-solid fa-circle-info"></i>
+                      <i class="fa-solid fa-pen-to-square"></i>
+                      <i class="fa-solid fa-trash"></i>
+
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                        12345
+                    </td>
+                    <td>
+                        Angel Emilio
+                    </td>
+                    <td>
+                        XXXXXX
+                    </td>
+                    <td>
+                        al12345@un.edu.mx
+                    </td>
+                    <td>
+                       <i class="fa-solid fa-circle-info"></i>
+                      <i class="fa-solid fa-pen-to-square"></i>
+                      <i class="fa-solid fa-trash"></i>
+                    </td>
+                  </tr>
+
+                   <tr>
+                    <td>
+                        74890
+                    </td>
+                    <td>
+                        Adrian
+                    </td>
+                    <td>
+                        Zarate
+                    </td>
+                    <td>
+                        Adriel671.6@gmail.com
+                    </td>
+                    <td>
+                     <i class="fa-solid fa-circle-info"></i>
+                      <i class="fa-solid fa-pen-to-square"></i>
+                      <i class="fa-solid fa-trash"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                        67892
+                    </td>
+                    <td>
+                        Juan
+                    </td>
+                    <td>
+                        Gman
+                    </td>
+                    <td>
+                       al67892@un.edu.mx
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                        96498
+                    </td>
+                    <td>
+                        Edgar
+                    </td>
+                    <td>
+                        Colin
+                    </td>
+                    <td>
+                        ColinEddie.8@gmail.com
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                        10000
+                    </td>
+                    <td>
+                        Marcelo
+                    </td>
+                    <td>
+                        Olvera
+                    </td>
+                    <td>
+                        590.ghy@gmail.com
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                        01007
+                    </td>
+                    <td>
+                        Roger
+                    </td>
+                    <td>
+                        Ordoñez
+                    </td>
+                    <td>
+                        Roger.8977@gmail.com
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                  </tr>
+
+
+
                 
-            </tr>
-           </thead>
 
-           <!--Cuerpo explicando la herramienta con su link para cada uno-->
-
-           <tbody style="background-color: chartreuse;">
-            <tr> 
-                 <td>Es un lenguaje de Markup que sirve para ordenar <br> documentos en la internet o en la web. <br> <a href="https://lenguajehtml.com/html/">Lenguaje HTML</a>  </td>
-                 <td>No es un lenguaje, sino una de las herramientas más <br> populares para desarrollar algo, como una página web. <br> <a href="https://code.visualstudio.com/docs/getstarted/getting-started">Tutorial de VS Code</a> </td>
-                 <td>Es un lenguaje que crea páginas web más fácilmente, <br> con el uso de menus, y hacer que el usuario se sienta cómodo. <br> <a href="https://www.javascripttutorial.net/">Tutorial de JavaScript</a> </td>
-                 <td>Es un lenguaje de stilo de hojas, que sirve principalmente <br> para la separación del contenido de documentos de su presentación, <br> para mejorar la accesibilidad y su mantenimiento. <br> <a href="https://www.w3schools.com/css/">Tutorial de CSS3</a> </td>
-
-
-            </tr>   
-                      
-           <!--Segunda fila de las otras cuatro herramientas con sus logos-->
-           <thead style="background-color: chocolate;">
-
-            <tr>
-                <th>Python <img src="imgs/python-logo.webp" alt="" width="200px" height="200px" </th>
-                <th>PHP <img src="imgs/php.webp" alt="" width="200px" heihgt="200px" </th>
-                <th>TypeScript <img src="imgs/Typescript_logo_2020.webp" alt="" width="200px" height="200px" </th> 
-                <th>C# <img src="imgs/c--4.webp" alt="" width="200px" height="200px" </th>
-
-
-            </tr>
-
-           </thead>
-
-           <!--Segundo cuerpo explicando cada herramienta con su link individual--> 
-
-           <tbody style="background-color: chartreuse;">
-
-                  <td>Python es un lenguaje que es conocido por su sintáxis <br> fácil de leer para usar menos código que en otros lenguajes. <br> <a href="https://www.w3schools.com/python/python_functions.asp">Tutorial de Python</a> </td>
-                  <td>PHP es usado principalmente para crear páginas <br> web con el uso de servidores. <br> <a href="https://www.w3schools.com/php/default.asp">Tutorial de PHP</a> </td>
-                  <td>TypeScript es casi como JavaScript, pero es más <br> útil para proyectos que requieran un mantenimiento.<br> <a href="https://www.typescripttutorial.net/">Tutorial de TypeScript</a> </td>
-                  <td>C# es muy popular porque puede ser utilizado para la mayoría <br> de las cosas, ya sean páginas web, desarrollo de juegos, etc. <br> <a href="https://www.w3schools.com/cs/index.php">Tutorial de C#</a> </td>
-
-
+                  
 
            </tbody>
-         
-           <!--El footer muestra en columnas las herramientas-->
-
-           <tfoot style="background-color:dodgerblue;">
-                  <tr>
-                      <th>Herramientas 1</th>
-                      <th>Herramientas 2</th>
-                      <th>Herramientas 3</th>
-                      <th>Herramientas 4</th>   
-
-                  </tr>                  
-           </tfoot>
 
 
     </table>
-    
-    
 </body>
 </html>
